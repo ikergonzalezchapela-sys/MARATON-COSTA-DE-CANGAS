@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maratón Internacional Costa de Cangas 2026</title>
+    <style>
+        /* Estilos Generales */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; line-height: 1.6; color: #333; }
+        header { background: #004a99; color: white; padding: 1rem 0; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        nav { display: flex; justify-content: space-around; align-items: center; max-width: 1200px; margin: auto; }
+        nav a { color: white; text-decoration: none; font-weight: bold; text-transform: uppercase; font-size: 0.9rem; }
+        
+        /* Hero Section */
+        .hero { 
+            background: linear-gradient(rgba(0,74,153,0.7), rgba(0,74,153,0.7)), url('https://images.unsplash.com/photo-1530549387074-d5629d88771b?auto=format&fit=crop&w=1350&q=80'); 
+            background-size: cover; background-position: center; height: 80vh; 
+            display: flex; flex-direction: column; justify-content: center; align-items: center; 
+            color: white; text-align: center; padding: 0 20px; margin-top: 60px;
+        }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        .hero p { font-size: 1.5rem; margin-bottom: 20px; }
+        .btn { background: #ffcc00; color: #004a99; padding: 15px 30px; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 1.2rem; transition: 0.3s; }
+        .btn:hover { background: #fff; transform: scale(1.05); }
+
+        /* Secciones */
+        .container { max-width: 1000px; margin: 50px auto; padding: 0 20px; }
+        h2 { color: #004a99; border-bottom: 3px solid #ffcc00; display: inline-block; padding-bottom: 5px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 20px; }
+        .card { background: #f4f4f4; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+
+        /* Footer */
+        footer { background: #222; color: white; text-align: center; padding: 40px 0; margin-top: 50px; }
+        .info-fast { background: #004a99; color: white; padding: 20px; border-radius: 10px; display: flex; justify-content: space-around; flex-wrap: wrap; margin-top: -50px; position: relative; z-index: 10; }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <div style="font-size: 1.5rem; font-weight: bold;">CANGAS 2026</div>
+        <a href="#inicio">Inicio</a>
+        <a href="#carrera">La Carrera</a>
+        <a href="#inscripciones">Inscripciones</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<section class="hero" id="inicio">
+    <h1>MARATÓN INTERNACIONAL <br> COSTA DE CANGAS 2026</h1>
+    <p>22 de Marzo de 2026 | Cangas do Morrazo, Galicia</p>
+    <a href="#inscripciones" class="btn">¡INSCRÍBETE YA!</a>
+</section>
+
+<div class="container">
+    <div class="info-fast">
+        <div><strong>Distancia:</strong> 42,195 km (Homologada)</div>
+        <div><strong>Salida:</strong> Alameda Vella (09:00h)</div>
+        <div><strong>Clima:</strong> 14°C - 18°C ideal</div>
+    </div>
+
+    <section id="carrera" style="margin-top: 80px;">
+        <h2>Sobre el Proyecto</h2>
+        <p>El Maratón Internacional Costa de Cangas es una prueba diseñada por <strong>Iker González Chapela</strong> para posicionar a Cangas como referente del turismo deportivo. El recorrido ofrece vistas espectaculares del litoral atlántico, combinando un perfil rápido y técnico.</p>
+        
+        <div class="grid">
+            <div class="card">
+                <h3>Recorrido Único</h3>
+                <p>Salida desde la Alameda Vella, recorriendo todo el vial costero hasta Aldán y regresando para una meta épica en la Praza de América.</p>
+            </div>
+            <div class="card">
+                <h3>Servicios Élite</h3>
+                <p>Avituallamientos cada 5km, cronometraje por chip, zona de fisioterapia post-meta y medalla de finisher para todos los que completen el reto.</p>
+            </div>
+            <div class="card">
+                <h3>Sostenibilidad</h3>
+                <p>Evento comprometido con el medio ambiente, reduciendo el uso de plásticos y protegiendo nuestro entorno natural.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="inscripciones" style="margin-top: 60px; text-align: center;">
+        <h2>Inscripciones</h2>
+        <p>Las inscripciones abren el <strong>15 de noviembre de 2025</strong>.</p>
+        <p>¡Asegura tu dorsal personalizado antes del 1 de marzo de 2026!</p>
+        <div style="background: #fdf6d8; padding: 20px; border-left: 5px solid #ffcc00; text-align: left;">
+            <strong>La bolsa del corredor incluye:</strong>
+            <ul>
+                <li>Camiseta técnica oficial 2026</li>
+                <li>Dorsal con chip integrado</li>
+                <li>Seguro de accidentes</li>
+                <li>Productos locales de Cangas</li>
+            </ul>
+        </div>
+    </section>
+</div>
+
+<footer id="contacto">
+    <p><strong>Organiza:</strong> Concello de Cangas do Morrazo - Área de Deportes</p>
+    <p>Email: info@maratoncostacangas.com | Tel: +34 986 XXX XXX</p>
+    <p>&copy; 2026 Proyecto Iker González Chapela - 2º TSEAS</p>
+</footer>
+
+</body>
+</html>

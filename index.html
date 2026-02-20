@@ -49,6 +49,24 @@
 <section class="hero" id="inicio">
     <h1>MARATÓN INTERNACIONAL <br> COSTA DE CANGAS 2026</h1>
     <p>22 de Marzo de 2026 | Cangas do Morrazo, Galicia</p>
+    <div id="countdown" style="background: #f4f4f4; padding: 20px; text-align: center; font-size: 20px; font-weight: bold; border-radius: 10px; margin: 20px;">
+    Cargando cuenta atrás...
+</div>
+    <script>
+const fechaMeta = new Date('March 22, 2026 09:00:00').getTime();
+
+setInterval(function() {
+    const ahora = new Date().getTime();
+    const distancia = fechaMeta - ahora;
+
+    const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
+    const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
+    const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
+
+    document.getElementById("countdown").innerHTML = "Faltan: " + dias + "d " + horas + "h " + minutos + "m " + segundos + "s ";
+}, 1000);
+</script>
     <a href="#inscripciones" class="btn">¡INSCRÍBETE YA!</a>
 </section>
 
@@ -77,6 +95,33 @@
                 <p>Evento comprometido con el medio ambiente, reduciendo el uso de plásticos y protegiendo nuestro entorno natural.</p>
             </div>
         </div>
+        <h2 style="text-align: center;">Premios y Categorías</h2>
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: Arial;">
+    <thead>
+        <tr style="background-color: #004a99; color: white;">
+            <th style="padding: 12px; border: 1px solid #ddd;">Categoría</th>
+            <th style="padding: 12px; border: 1px solid #ddd;">Edad</th>
+            <th style="padding: 12px; border: 1px solid #ddd;">Premio</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">Sénior</td>
+            <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">18 - 34 años</td>
+            <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">Trofeo + 500€</td>
+        </tr>
+        <tr style="background-color: #f9f9f9;">
+            <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">Veteranos A</td>
+            <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">35 - 49 años</td>
+            <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">Trofeo + Material deportivo</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">Veteranos B</td>
+            <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">+50 años</td>
+            <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">Trofeo + Lote productos locales</td>
+        </tr>
+    </tbody>
+</table>
     </section>
 
     <section id="inscripciones" style="margin-top: 60px; text-align: center;">
@@ -102,7 +147,7 @@
 
 <footer id="contacto">
     <p><strong>Organiza:</strong> Concello de Cangas do Morrazo - Área de Deportes</p>
-    <p>Email: info@maratoncostacangas.com | Tel: +34 986 XXX XXX</p>
+    <p>Email: info@maratoncostacangas.com | Tel: +34 986 666 666</p>
     <p>&copy; 2026 Proyecto Iker González Chapela - 2º TSEAS</p>
 </footer>
 

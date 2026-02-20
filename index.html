@@ -59,10 +59,10 @@ setInterval(function() {
     const ahora = new Date().getTime();
     const distancia = fechaMeta - ahora;
 
-    const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
-        const horas = String(Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2, '0');
-        const minutos = String(Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
-        const segundos = String(Math.floor((distancia % (1000 * 60)) / 1000)).padStart(2, '0');
+    const dias = String(Math.floor(distancia / (1000 * 60 * 60 * 24))).padStart(2, '0');
+    const horas = String(Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2, '0');
+const minutos = String(Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
+const segundos = String(Math.floor((distancia % (1000 * 60)) / 1000)).padStart(2, '0');
 
     document.getElementById("countdown").innerHTML = "Faltan: " + dias + "d " + horas + "h " + minutos + "m " + segundos + "s ";
 }, 1000);
@@ -146,7 +146,7 @@ setInterval(function() {
                 <li>Productos locales de Cangas</li>
             </ul>
 
-            <img src="merchandasing.png.PNG" alt="Pack del corredor" style="display: block; margin: 20px auto; width: 80%; max-width: 600px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <img src="merchandasing.png.PNG" alt="Pack Merchandising" style="display: block; margin: 30px auto; width: 80%; max-width: 600px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
             
         </div>
     </section>
